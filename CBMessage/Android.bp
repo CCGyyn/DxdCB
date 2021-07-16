@@ -1,0 +1,19 @@
+android_app {
+    name: "CBMessage",
+
+    srcs: ["**/*.java"],
+    certificate: "platform",
+    platform_apis: true,
+
+    static_libs: [
+        "android-support-v4",
+        "android-support-v7-appcompat",
+    ],
+
+    optimize: {
+        enabled: false,
+    },
+    dex_preopt:{
+        enabled:false,
+    },
+}
